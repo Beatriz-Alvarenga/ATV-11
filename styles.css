@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #0d1f3c, #000);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  margin-top: 150px;
+  gap: 50px;
+  max-width: 1000px;
+  padding: 40px;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.5em;
+  color: #33ccff;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.icon-box {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: #33ccff;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box::before {
+  content: "*";
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+}
+
+.icon-box span {
+  margin-left: 10px;
+  background: black;
+  color: white;
+  padding: 2px 5px;
+  font-size: 0.8em;
+  border-radius: 4px;
+}
+
+.line {
+  margin-top: 40px;
+  width: 300px;
+  height: 2px;
+  background: white;
+  position: relative;
+}
+
+.line::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -4px;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+}
+
+.text-content {
+  max-width: 500px;
+}
+
+.text-content h1 {
+  font-size: 2em;
+  line-height: 1.4;
+}
+
+.text-content h1 span {
+  color: #00ccff;
+}
+
+.text-content p {
+  margin: 20px 0;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.buttons a {
+  text-decoration: none;
+  background-color: #00ccff;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.buttons a:hover {
+  background-color: #009ec2;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 300px;
+  border-radius: 10px;
+  filter: grayscale(100%);
+}
+
+.image-container::before,
+.image-container::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #00ccff;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+}
+
+.image-container::after {
+  top: 10px;
+  left: 10px;
+}
